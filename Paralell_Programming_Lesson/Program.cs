@@ -65,7 +65,7 @@ namespace Paralell_Programming_Lesson
         }
         public static int HeavyComputation(string name)
 		{
-			Console.WriteLine("Start: " + name);
+			Console.WriteLine(name + " is started");
 			var timer = new Stopwatch();
 			timer.Start();
 			var result = 0;
@@ -75,7 +75,7 @@ namespace Paralell_Programming_Lesson
 				result += (a % 10) - 120;
 			}
 			timer.Stop();
-			Console.WriteLine("End: " + name + ' ' + timer.ElapsedMilliseconds);
+			Console.WriteLine(name + " is ended: " + timer.ElapsedMilliseconds);
 			return result;
 		}
 
